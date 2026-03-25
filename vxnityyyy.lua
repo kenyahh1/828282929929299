@@ -7,12 +7,12 @@ local TweenService = game:GetService("TweenService")
 local LocalPlayer = Players.LocalPlayer
 
 -- Load WindUI at the start to ensure it's available globally
-local success, WindUI = pcall(function()
-    return loadstring(game:HttpGet("https://raw.githubusercontent.com/Footagesus/WindUI/main/dist/main.lua"))()
+local success, OrionLib = pcall(function()
+    return loadstring(game:HttpGet("https://raw.githubusercontent.com/shlexware/Orion/main/source"))()
 end)
 
-if not success or not WindUI then
-    warn("vxnity hub: Failed to load WindUI library.")
+if not success or not OrionLib then
+    warn("vxnity hub: Failed to load Orion library.")
     return
 end
 
